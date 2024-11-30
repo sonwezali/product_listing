@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const ProductList = () => {
-  const [products, setProducts] = useState([]);
+  const apiUrl = 'https://product-listing-7koh.onrender.com';
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/products/')
+    fetch('${apiUrl}products/')
       .then(response => response.json())
       .then(data => {
         // Add a default selectedColor to each product
@@ -41,8 +41,8 @@ const ProductList = () => {
           <span
             key={i}
             className={`text-xl ${i < fullStars || (halfStar && i === fullStars)
-                ? 'text-yellow-500'
-                : 'text-gray-300'
+              ? 'text-yellow-500'
+              : 'text-gray-300'
               }`}
           >
             ★
