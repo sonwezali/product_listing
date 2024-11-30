@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const ProductList = () => {
-  const apiUrl = 'https://product-listing-7koh.onrender.com';
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('${apiUrl}products/')
+    fetch('https://product-listing-7koh.onrender.com/api/products/')
       .then(response => response.json())
       .then(data => {
         // Add a default selectedColor to each product
