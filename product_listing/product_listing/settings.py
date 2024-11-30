@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-hz8nh(1ok6uk6e_c#nrngbw#e&-)zydl!w#mrl5k70*mu7$*=@
 DEBUG = True
 
 ALLOWED_HOSTS = ['https://kutez-case-study.onrender.com',
-                 "localhost",]
+                 "localhost",
+                 "product-listing-7koh.onrender.com",]
 
 
 # Application definition
