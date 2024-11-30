@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'api',  # Make sure this line is added
+    'api', 
 ]
 
 MIDDLEWARE = [
